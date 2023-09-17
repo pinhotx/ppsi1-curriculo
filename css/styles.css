@@ -1,35 +1,61 @@
 body {
-  background-color: #231942;
+  /* Paleta de Cores*/
+  --principal: #9926DE;
+  --secundario: #DE972F;
+  --bg: #0E041E;
+
+  background-color: var(--bg);
   color: white;
-  font-family: 'Roboto', sans-serif;
-  
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 img {
   width: 20%;
-  margin: 0 auto;
-  
+  margin: 16px;
+  border: var(--secundario) 3px solid;
+  float: left;
 }
 em{
-  color: #F9B5AC;
+  color: var(--principal);
   font-weight: 500;
+  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
 
 strong{
-  color:#0CCA4A;
+  color: var(--principal);
+}
+h1{
+  font-style: italic;
+  background-image: url(https://i.pinimg.com/originals/04/2e/28/042e28021c6d8cdd2d69b0425fbf510b.gif);
+  color:var(--bg);
+}
+
+h1 em{
+  color: var(--bg);
 }
 
 h1,
 h2 {
-  color: #0CCA4A;
   font-weight: bolder;
   text-transform: uppercase;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border: var(--principal) 3px solid;
+  margin: 24px 16px;
+}
+h2{
+  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+  color: var(--principal);
+
 }
 
 h3 {
-  color: #F9B5AC;
+  color: var(--secundario);
   font-weight: bold;
 }
 
 a {
-  color: #0CCA4A;
+  color: var(--secundario);
+}
+
+h3, h4, p{
+  margin-left: 16px;
 }
