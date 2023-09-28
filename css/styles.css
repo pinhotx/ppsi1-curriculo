@@ -47,7 +47,7 @@ h2{
 
 }
 
-h3 {
+h3, dt {
   color: var(--secundario);
   font-weight: bold;
 }
@@ -56,6 +56,28 @@ a {
   color: var(--secundario);
 }
 
-h3, h4, p{
+h3, h4, p, dd {
   margin-left: 16px;
+}
+dd{
+  margin-left: 3rem;
+}
+
+dt{
+  font-size: 16px;
+  margin: 8px 16px;
+}
+
+ul{
+  list-style-type: none;
+}
+ol{
+  list-style-type:upper-roman;
+  width: fit-content;
+  position: relative;
+  left: 24px;
+}
+
+li{
+  margin-bottom: 8px;
 }
